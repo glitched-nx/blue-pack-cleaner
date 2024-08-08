@@ -151,9 +151,9 @@ int main(int argc, char *argv[])
     deleteFile("sdmc:/bootloader/patches.ini");
 
     // Theme deaktivieren, falls vorhanden 
-    deleteFile("sdmc:/atmosphere/contents/0100000000001000/flags/boot2.flag");
-    deleteFile("sdmc:/atmosphere/contents/0100000000001007/flags/boot2.flag");
-    deleteFile("sdmc:/atmosphere/contents/0100000000001013/flags/boot2.flag");
+    // deleteFile("sdmc:/atmosphere/contents/0100000000001000/flags/boot2.flag");
+    // deleteFile("sdmc:/atmosphere/contents/0100000000001007/flags/boot2.flag");
+    // deleteFile("sdmc:/atmosphere/contents/0100000000001013/flags/boot2.flag");
 
     // Sich selbst bereinigen
     deleteFolder("sdmc:/atmosphere/contents/010000000000DA7A/flags");
