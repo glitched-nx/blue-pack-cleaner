@@ -133,15 +133,13 @@ void deleteFolder(char *path)
  */
 int main(int argc, char *argv[])
 {
-    // Alte Tesla-Dateien löschen
-    // deleteFolder("sdmc:/atmosphere/contents/010000000007E51A/flags");
-    // deleteFolder("sdmc:/atmosphere/contents/010000000007E51A");
-
-    // Nichole Logo löschen
+    // Bootlogo bereinigen
     // deleteFolder("sdmc:/atmosphere/exefs_patches/bootlogo");
 
-    // Falschen DeepSea NRO-Namen löschen
-    // deleteFile("sdmc:/switch/DeepSea-Updater/DeepSeaUpdater.nro");
+    // AIO Updater bereinigen
+    // deleteFile("sdmc:/switch/aio-switch-updater/aio-switch-updater.nro");
+    // deleteFolder("sdmc:/switch/aio-switch-updater");
+    // deleteFolder("sdmc:/config/aio-switch-updater");
 
     // Sigpatches bereinigen
     deleteFolder("sdmc:/switch/.packages/cleanup Sigpatches");
@@ -149,9 +147,15 @@ int main(int argc, char *argv[])
     deleteFolder("sdmc:/atmosphere/exefs_patches/nfim_ctest");
     deleteFolder("sdmc:/atmosphere/kip_patches/fs_patches");
     deleteFolder("sdmc:/atmosphere/kip_patches/loader_patches");
+    deleteFolder("sdmc:/atmosphere/kip_patches");
     deleteFile("sdmc:/bootloader/patches.ini");
 
-    // Sich selbst löschen
+    // Theme deaktivieren, falls vorhanden 
+    deleteFile("sdmc:/atmosphere/contents/0100000000001000/flags/boot2.flag");
+    deleteFile("sdmc:/atmosphere/contents/0100000000001007/flags/boot2.flag");
+    deleteFile("sdmc:/atmosphere/contents/0100000000001013/flags/boot2.flag");
+
+    // Sich selbst bereinigen
     deleteFolder("sdmc:/atmosphere/contents/010000000000DA7A/flags");
     deleteFolder("sdmc:/atmosphere/contents/010000000000DA7A");
 
