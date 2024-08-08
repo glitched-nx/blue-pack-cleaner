@@ -1,3 +1,3 @@
-# DeepSea Cleaner
+# blue pack cleaner
 
-This is a simple sysmodule to clean up files on first run that may be left over from previous installations of DeepSea.
+Dies ist ein simples Sysmodul, das beim ersten Start Dateien bereinigt, die von früheren Installationen vom ***blue pack oder Blue Edition CFW Pack*** übrig geblieben sein könnten.
