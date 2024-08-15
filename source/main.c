@@ -146,6 +146,7 @@ int main(int argc, char *argv[])
     deleteFile("sdmc:/bootloader/ini/more_conigs_erista.ini");
     deleteFile("sdmc:/bootloader/ini/Stock.ini");
     deleteFile("sdmc:/bootloader/ini/Tegra.ini");
+    deleteFile("sdmc:/bootloader/payloads/Hekate.bin");
     deleteFile("sdmc:/bootloader/boot/cfw_pack_bootlogo.bmp");
 
     // Sigpatches bereinigen
