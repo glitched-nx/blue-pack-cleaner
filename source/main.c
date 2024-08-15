@@ -141,6 +141,13 @@ int main(int argc, char *argv[])
     // deleteFolder("sdmc:/switch/aio-switch-updater");
     // deleteFolder("sdmc:/config/aio-switch-updater");
 
+    // Hekate Configs etc. bereinigen
+    deleteFile("sdmc:/bootloader/ini/more_conigs_core.ini");
+    deleteFile("sdmc:/bootloader/ini/more_conigs_erista.ini");
+    deleteFile("sdmc:/bootloader/ini/Stock.ini");
+    deleteFile("sdmc:/bootloader/ini/Tegra.ini");
+    deleteFile("sdmc:/bootloader/boot/cfw_pack_bootlogo.bmp");
+
     // Sigpatches bereinigen
     deleteFolder("sdmc:/switch/.packages/cleanup Sigpatches");
     deleteFolder("sdmc:/atmosphere/exefs_patches/es_patches");
