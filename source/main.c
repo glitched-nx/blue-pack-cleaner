@@ -141,14 +141,21 @@ int main(int argc, char *argv[])
     // deleteFolder("sdmc:/switch/aio-switch-updater");
     // deleteFolder("sdmc:/config/aio-switch-updater");
 
+    // Theme deaktivieren, falls vorhanden 
+    // deleteFile("sdmc:/atmosphere/contents/0100000000001000/flags/boot2.flag");
+    // deleteFile("sdmc:/atmosphere/contents/0100000000001007/flags/boot2.flag");
+    // deleteFile("sdmc:/atmosphere/contents/0100000000001013/flags/boot2.flag");
+
     // Hekate Configs etc. bereinigen
     deleteFile("sdmc:/bootloader/ini/more_conigs_core.ini");
     deleteFile("sdmc:/bootloader/ini/more_conigs_erista.ini");
     deleteFile("sdmc:/bootloader/ini/Stock.ini");
     deleteFile("sdmc:/bootloader/ini/Tegra.ini");
+    deleteFile("sdmc:/bootloader/ini/hekate.ini");
+    deleteFile("sdmc:/bootloader/ini/enigma.ini");
     deleteFile("sdmc:/bootloader/payloads/Hekate.bin");
     deleteFile("sdmc:/bootloader/boot/cfw_pack_bootlogo.bmp");
-
+    
     // Sigpatches bereinigen
     deleteFolder("sdmc:/switch/.packages/cleanup Sigpatches");
     deleteFolder("sdmc:/atmosphere/exefs_patches/es_patches");
@@ -157,11 +164,6 @@ int main(int argc, char *argv[])
     deleteFolder("sdmc:/atmosphere/kip_patches/loader_patches");
     deleteFolder("sdmc:/atmosphere/kip_patches");
     deleteFile("sdmc:/bootloader/patches.ini");
-
-    // Theme deaktivieren, falls vorhanden 
-    // deleteFile("sdmc:/atmosphere/contents/0100000000001000/flags/boot2.flag");
-    // deleteFile("sdmc:/atmosphere/contents/0100000000001007/flags/boot2.flag");
-    // deleteFile("sdmc:/atmosphere/contents/0100000000001013/flags/boot2.flag");
 
     // Sich selbst bereinigen
     deleteFolder("sdmc:/atmosphere/contents/010000000000DA7A/flags");
