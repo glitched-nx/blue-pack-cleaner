@@ -155,6 +155,7 @@ int main(int argc, char *argv[])
     deleteFile("sdmc:/bootloader/ini/enigma.ini");
     deleteFile("sdmc:/bootloader/payloads/Hekate.bin");
     deleteFile("sdmc:/bootloader/boot/cfw_pack_bootlogo.bmp");
+    deleteFile("sdmc:/bootloader/res/icon_pure_atmo_ofw_nobox.bmp");
     
     // Sigpatches bereinigen
     deleteFolder("sdmc:/switch/.packages/cleanup Sigpatches");
