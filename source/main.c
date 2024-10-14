@@ -146,7 +146,7 @@ int main(int argc, char *argv[])
     // deleteFile("sdmc:/atmosphere/contents/0100000000001007/flags/boot2.flag");
     // deleteFile("sdmc:/atmosphere/contents/0100000000001013/flags/boot2.flag");
 
-    // Hekate Configs etc. bereinigen
+    // Hekate Configs, Payloads etc. bereinigen
     deleteFile("sdmc:/bootloader/ini/more_conigs_core.ini");
     deleteFile("sdmc:/bootloader/ini/more_conigs_erista.ini");
     deleteFile("sdmc:/bootloader/ini/Stock.ini");
@@ -154,6 +154,7 @@ int main(int argc, char *argv[])
     deleteFile("sdmc:/bootloader/ini/hekate.ini");
     deleteFile("sdmc:/bootloader/ini/enigma.ini");
     deleteFile("sdmc:/bootloader/payloads/Hekate.bin");
+    deleteFile("sdmc:/bootloader/payloads/Enigma_RCM.bin");
     deleteFile("sdmc:/bootloader/boot/cfw_pack_bootlogo.bmp");
     deleteFile("sdmc:/bootloader/res/icon_pure_atmo_ofw_nobox.bmp");
     deleteFile("sdmc:/bootloader/res/background.bmp");
