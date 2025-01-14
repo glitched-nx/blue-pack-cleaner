@@ -146,6 +146,30 @@ int main(int argc, char *argv[])
     // deleteFile("sdmc:/atmosphere/contents/0100000000001007/flags/boot2.flag");
     // deleteFile("sdmc:/atmosphere/contents/0100000000001013/flags/boot2.flag");
 
+    // SaltySD bereinigen
+    deleteFile("sdmc:/SaltySD/exceptions.txt");
+    deleteFile("sdmc:/SaltySD/saltysd_bootstrap.elf");
+    deleteFile("sdmc:/SaltySD/saltysd_bootstrap32_3k.elf");
+    deleteFile("sdmc:/SaltySD/saltysd_bootstrap32_5k.elf");
+    deleteFile("sdmc:/SaltySD/saltysd_core.elf");
+    deleteFile("sdmc:/SaltySD/saltysd_core32.elf");
+    deleteFile("sdmc:/SaltySD/flags/log.flag");
+    deleteFolder("sdmc:/SaltySD");
+
+    // SaltySD Abhängigkeiten bereinigen
+    deleteFile("sdmc:/atmosphere/contents/0000000000534C56/exefs.nsp");
+    deleteFile("sdmc:/atmosphere/contents/0000000000534C56/toolbox.json");
+    deleteFile("sdmc:/atmosphere/contents/0000000000534C56/flags/boot2.flag");
+    deleteFolder("sdmc:/atmosphere/contents/0000000000534C56");
+
+    deleteFile("sdmc:/config/config/status-monitor/config.ini");
+    deleteFile("sdmc:/config/status-monitor/config.ini.template");
+    deleteFolder("sdmc:/config/config/status-monitor");
+
+    deleteFile("sdmc:/switch/.overlays/Status-Monitor-Overlay.ovl");
+    deleteFile("sdmc:/switch/.overlays/FPSLocker.ovl");
+    deleteFile("sdmc:/switch/.overlays/ReverseNX-RT-ovl.ovl");
+
     // Hekate Configs, Payloads etc. bereinigen
     deleteFile("sdmc:/bootloader/ini/more_conigs_core.ini");
     deleteFile("sdmc:/bootloader/ini/more_conigs_erista.ini");
